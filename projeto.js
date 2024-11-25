@@ -22,9 +22,16 @@ sub.addEventListener("click", () => {
 		container.style.display ="block"
 
 	text.style.display= "block"
+	
+	   		text.innerHTML = ""
 
 
 });
+icone.addEventListener("click", ()=>{
+		text.innerHTML = "Pesquisar por algo"
+
+	
+})
 
 icon2.addEventListener("click", () => {
     // When the close icon is clicked, revert the changes

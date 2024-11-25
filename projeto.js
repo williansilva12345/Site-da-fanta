@@ -1,24 +1,41 @@
+
+
+
 var icone = document.getElementById("logo");
 var sub = document.getElementById("sublogo");
 var icon2 = document.getElementById("icon2");
-var list = document.getElementById("list")
- list.style.opacity = "0"
+var list = document.getElementById("list");
+  var container = document.getElementById("logoContainer")
+  
+  var text  = document.getElementById("noResults")
+	    list.style.opacity = "0"; // Show the list
+	
+	container.style.display ="none"
+
 sub.addEventListener("click", () => {
     // Toggle visibility of the search and close icon
     sub.style.opacity = "0";  // Hide the search icon
     icon2.style.opacity = "1"; // Show the close icon
     icone.style.width = "200px"; // Expand input field when search is clicked
     icone.style.opacity = "1"; // Make the input visible
-	list.style.opacity = "1"
+    list.style.opacity = "1"; // Show the list
+		container.style.display ="block"
+
+	text.style.display= "block"
+
+
 });
 
 icon2.addEventListener("click", () => {
     // When the close icon is clicked, revert the changes
     sub.style.opacity = "1"; // Show the search icon again
     icon2.style.opacity = "0"; // Hide the close icon
-    icone.style.width = "100px"; // Shrink the input field
+    icone.style.width = "0"; // Shrink the input field
     icone.style.opacity = "0"; // Hide the input field
-	list.style.opacity = "0"
+    list.style.opacity = "0"; // Hide the list
+	container.style.display ="none"
+		text.style.display= "none"
+
 });
 
 

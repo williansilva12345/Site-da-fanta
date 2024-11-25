@@ -377,3 +377,57 @@ footer{
 color:white;	
 }
 
+.flex3 {
+    display: flex;
+    justify-content: center; /* Para centralizar a flex2 dentro de flex3 */
+    padding: 10px;
+}
+
+.flex2 {
+    display: flex;
+    justify-content: space-around; /* Distribui o espaço ao redor dos itens */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    width: 100%; /* Para ocupar toda a largura do contêiner pai */
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Remove a margem padrão do ul */
+}
+
+.menu li {
+    margin: 0 10px; /* Adiciona um espaço entre os itens do menu */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333; /* Cor do texto */
+    font-weight: bold; /* Negrito para os itens do menu */
+}
+
+.home-icon, .search-icon {
+    display: flex;
+    align-items: center; /* Alinha o ícone verticalmente ao centro */
+}
+
+.material-symbols-outlined {
+    font-size: 24px; /* Tamanho do ícone */
+}
+
+.paidiv{
+	background:pink;
+}
+
+.toggle{
+	
+	display:block;
+	
+}
+
+#list {
+	opacity:"0";
+}
+
+
